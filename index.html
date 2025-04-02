@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Książki Szkolne</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #0073e6;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            background: #005bb5;
+            padding: 10px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background 0.3s;
+        }
+        .menu a:hover {
+            background: #004494;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .book {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            width: 200px;
+        }
+        .book:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        img {
+            width: 150px;
+            height: 220px;
+            border-radius: 10px;
+        }
+        h3 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Książki</div>
+    </div>
+    <div class="container">
+        <div class="book" onclick="window.location.href='https://drive.google.com/file/d/1IrUbUIVIp3f1U-rBW8yzP-0kqJLVkM1I/view'">
+            <img src="https://sparklyfrog2060.github.io/EbookSzkola/4499906572344.webp" alt="Książka 1">
+            <h3>Jezyk Angielski kl. 5</h3>
+        </div>
+        <div class="book" onclick="window.location.href='https://drive.google.com/file/d/1gdrzoiZMiR5TEeLXlFpiWiAlA4cCCj_f/view'">
+            <img src="https://sparklyfrog2060.github.io/EbookSzkola/1.jpg" alt="Książka 2">
+            <h3>Biologia kl. 5</h3>
+        </div>
+    </div>
+</body>
+</html>
